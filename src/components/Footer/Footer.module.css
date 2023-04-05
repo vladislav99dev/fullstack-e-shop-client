@@ -1,0 +1,73 @@
+.container {
+  @apply bg-primary-darkest 
+  grid 
+  grid-cols-1 
+  /* justify-items-center */
+  gap-y-8 
+  lg:grid-cols-5 
+  lg:gap-y-4 
+  p-8
+  py-10;
+}
+
+.firstCol {
+  @apply
+    flex
+    flex-col
+    items-center
+    lg:items-start
+    lg:ml-[50%]
+    lg:translate-x-[-50%]
+    text-base
+    text-primary-dark-100
+    font-semibold;
+}
+
+.firstCol li {
+  @apply py-[0.1rem]
+    hover:cursor-pointer
+    hover:text-primary-100;
+}
+
+.icons {
+  @apply flex
+    gap-x-8
+    justify-center
+    lg:justify-start;
+}
+
+.location-copyright {
+  @apply flex  
+    flex-col 
+    lg:flex-row
+    lg:col-span-2
+    gap-4
+    justify-center 
+    items-center
+    text-white 
+    text-center
+    text-lg;
+}
+
+.terms {
+  @apply
+    row-start-5
+    text-center
+    flex 
+    justify-center
+    lg:row-start-auto
+    lg:col-start-[-3]
+    lg:col-span-2 ;
+}
+
+.terms ul {
+  @apply text-gray-400 
+    text-lg
+    lg:text-sm 
+    lg:flex
+    lg:gap-x-8;
+}
+
+.terms li {
+  @apply hover:text-white cursor-pointer;
+}

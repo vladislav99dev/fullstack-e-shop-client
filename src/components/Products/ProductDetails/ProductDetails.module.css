@@ -1,0 +1,157 @@
+.container{
+    /* grid-template-rows: 50% 50%; */
+    @apply 
+    bg-white 
+    flex
+    flex-col
+    items-center
+}
+.product-info{
+    grid-area: description;
+   @apply
+   flex
+   flex-col
+   items-center   
+   gap-y-2
+   w-3/4
+   text-center
+   mb-8
+   xl:mb-0
+}
+.product-info p:first-child{
+    @apply
+    text-3xl
+    uppercase
+    font-semibold
+    text-primary-darkest
+}
+.product-info p:nth-child(2){
+    @apply
+    text-2xl
+    font-semibold
+    text-primary-dark-600
+}
+.product-info p:nth-child(3){
+    @apply
+    text-2xl
+    font-semibold
+    text-primary-dark-300
+}
+.sale-price{
+    @apply
+    text-2xl
+    font-semibold
+    text-red-600
+}
+.product-info p:nth-child(5){
+    @apply
+    text-xl
+    text-center
+    font-medium
+    text-primary-darkest
+}
+
+.product-poster{
+    grid-area: poster;
+    @apply
+    mx-auto
+    xs:w-[85%]
+    sm:w-2/3
+}
+.form{
+    grid-area: select;
+    @apply
+    max-w-[75%]
+}
+.form p:first-child{
+    @apply
+    text-xl 
+    py-6
+    text-center
+    font-semibold 
+    text-primary-darkest
+}
+.sizes-container{
+    @apply
+    grid 
+    grid-cols-3
+    gap-2
+    justify-items-center
+}
+.sizes-container button{
+    @apply
+    min-w-[70px]
+    max-w-[100px]
+}
+.btn-disabled{
+    @apply
+    rounded-md 
+    bg-gray-100 
+    line-through 
+    flex 
+    justify-center 
+    cursor-default
+}
+.btn-selected{
+    @apply
+    bg-green-200
+}
+.btn-default{
+    @apply
+    border-2 
+    rounded-md 
+    border-gray-300 
+    font-semibold 
+    text-gray-400 
+    hover:bg-green-200 
+    duration-500
+}
+.select-container{
+    @apply
+    text-center
+    mt-4
+}
+.select{
+    @apply
+    w-[100%]
+    border-2
+    border-[#DDDDDD]
+    rounded-md
+    font-semibold
+    text-center
+    text-gray-700
+}
+.select-option{
+    @apply
+    text-center font-semibold text-gray-700
+}
+.btns-container{
+    @apply
+    flex justify-center
+}
+.btn-service-default{
+    @apply
+    py-6   
+    mb-2 
+    mt-4 
+    rounded-md 
+    font-medium 
+    ease-in-out 
+    duration-500
+    uppercase
+}
+
+.adminButtons{
+    grid-area: 'adminButtons';
+}
+
+@media(min-width:1280px){
+    .container{
+        display: grid;
+        grid-template-areas: 
+        "poster description" 
+        "poster select"
+        ;
+        grid-template-columns: 50% 50%;
+    }
+}

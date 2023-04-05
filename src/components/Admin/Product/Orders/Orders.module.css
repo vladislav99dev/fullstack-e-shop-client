@@ -1,0 +1,14 @@
+.container {
+  @apply min-h-[640px]
+    bg-primary-lightest
+    flex
+    flex-col
+    items-center
+    py-20
+}
+.orders-container{
+    @apply
+    flex 
+    flex-col
+    gap-y-10
+}

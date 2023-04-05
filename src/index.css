@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+  body {
+    font-family: Arial, Helvetica;
+    @apply bg-white;
+  }
+
+  .spinner {
+    animation: Rotate 2s both infinite linear;
+  }
+  .path {
+    animation: DrawLine 0.5s both infinite alternate linear;
+    fill: none;
+    stroke: #00df9a;
+    stroke-width: 50;
+  }
+  @keyframes Rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes DrawLine {
+    0% {
+      stroke-dasharray: 0 126;
+    }
+    100% {
+      stroke-dasharray: 126 126;
+    }
+  }
+  .page_404 {
+    padding: 40px 0;
+    background: #fff;
+    font-family: "Arvo", serif;
+  }
+
+  .page_404 img {
+    width: 100%;
+  }
+
+  .four_zero_four_bg {
+    background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+    height: 400px;
+    background-position: center;
+  }
+
+  .four_zero_four_bg h1 {
+    font-size: 80px;
+  }
+
+  .four_zero_four_bg h3 {
+    font-size: 80px;
+  }
+
+  .link_404 {
+    color: #fff !important;
+    padding: 10px 20px;
+    background: #39ac31;
+    margin: 20px 0;
+    display: inline-block;
+  }
+  .contant_box_404 {
+    margin-top: -50px;
+  }
+}
+
+
+
+
+
+
+
+  /* .form-input{
+      @apply w-2/3 ml-[17%] md:w-1/3 md:ml-[33.5%] mb-2 mt-6 border-2 border-green-300 hover:border-green-100 rounded-md py-[0.2rem]
+    }
+    label{
+        @apply italic text-[#00df9a] font-bold text-xl  
+    }
+    .mobile-links{
+        @apply text-xl font-bold text-white drop-shadow-xl
+    }
+    .desktop-links{
+        @apply p-4 text-xl font-bold  hover:bg-green-200 rounded-lg ease-in-out duration-300
+    }
+    .container-links{
+        @apply py-4 flex justify-center border-b-2 border-white
+    } */

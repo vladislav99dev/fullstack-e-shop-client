@@ -1,0 +1,53 @@
+.container{
+    @apply
+    bg-primary-lightest
+    p-10
+    min-h-[640px]
+}
+.heading{
+    @apply
+    text-4xl
+    uppercase
+    font-bold
+    text-center
+    text-primary-darkest
+    mb-2
+}
+.inputs-container{
+    @apply
+    grid
+    grid-cols-2
+    gap-y-2
+    gap-x-2
+    w-full
+    sm:w-[70%]
+}
+.inputs-container input{
+    @apply
+    border-2
+    py-2
+    rounded-md
+    border-primary-darkest
+    hover:border-primary-dark-200
+}
+.inputs-container input:focus{
+    @apply
+    border-primary-100
+}
+.button-container{
+    @apply
+    flex justify-center
+    mt-4
+    w-full
+}
+.submit-button{
+    @apply
+    bg-primary-100
+    py-2
+    rounded-md
+    text-2xl
+    font-semibold
+    text-primary-lightest
+    w-[50%]
+    sm:w-[25%]
+}

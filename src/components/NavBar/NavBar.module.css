@@ -1,0 +1,139 @@
+/* NAV CONTAINER */
+.nav-container {
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  grid-template-rows: 1;
+  grid-template-areas: "logo icons";
+  @apply py-4 
+    px-8 
+    sm:px-10 
+    bg-primary-darkest
+    xl:gap-x-10;
+}
+
+/* LOGO */
+.logo {
+  grid-area: logo;
+}
+
+/* SHOPPING LIST LINKS FOR DIFFERENT PAGES */
+.nav-links {
+  grid-area: nav-links;
+  grid-row-start: 2;
+  grid-column-start: 1;
+  @apply flex
+    flex-col 
+    py-4 
+    items-center 
+    gap-y-6
+    /* DESKTOP */
+    xl:col-span-1
+    xl:flex-row
+    xl:justify-end
+    xl:mr-10
+    xl:gap-x-8
+    xl:py-0;
+}
+
+.hide {
+  @apply hidden;
+}
+
+.nav-links li {
+  @apply text-2xl
+    w-full
+    text-center
+    py-2
+  bg-primary-dark-800
+    font-semibold
+    rounded-md
+    /*DESKTOP  */
+    xl:w-auto
+    xl:bg-inherit;
+}
+.nav-links li:last-child {
+  @apply bg-inherit;
+}
+
+.nav-link {
+  @apply text-primary-lightest
+  hover:text-primary-light-400;
+}
+
+.sale-link {
+  @apply text-primary-light-300
+  hover:text-primary-dark-200;
+}
+
+/* USER LIST LINKS */
+.nav-user-links {
+  @apply text-2xl
+    flex 
+    justify-center
+    uppercase
+    /* DESKTOP */
+    gap-x-4;
+}
+.nav-user-links a {
+  @apply py-2
+    border-[3px]
+    rounded-md
+    cursor-pointer;
+}
+.nav-login-button {
+  @apply px-2
+    text-primary-dark-100
+    border-primary-dark-100
+    hover:border-primary-light-600 
+    hover:text-primary-light-600;
+}
+
+.nav-register-button {
+  @apply px-2
+    text-primary-light-200
+    border-primary-light-200
+    hover:border-primary-light-800 
+    hover:text-primary-light-800;
+}
+
+.nav-logout-button {
+  @apply px-2
+    text-primary-dark-100
+    border-primary-dark-100
+    hover:border-primary-light-600 
+    hover:text-primary-light-600;
+}
+
+.nav-profile-button {
+  @apply px-4
+    text-primary-light-200
+    border-primary-light-200
+    hover:border-primary-light-800 
+    hover:text-primary-light-800;
+}
+
+/*ICONS LIST */
+.nav-icons {
+  grid-area: icons;
+  @apply flex 
+    justify-end 
+    items-center 
+    gap-x-4 
+    xl:gap-x-8
+    xl:justify-end;
+}
+
+@media (min-width: 1280px) {
+  .nav-links {
+    grid-row-start: 1;
+    grid-column-start: 3;
+    display: flex !important;
+  }
+  .nav-container {
+    grid-template-columns: 1fr 1fr auto;
+    grid-area: "logo nav-links icons";
+  }
+  .nav-icons {
+    grid-column-start: 2;
+  }
+}

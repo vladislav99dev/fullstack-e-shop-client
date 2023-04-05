@@ -1,0 +1,61 @@
+.container{
+    @apply
+    bg-primary-lightest
+    min-h-[550px]
+    flex
+    flex-col
+    items-center
+    justify-center
+    p-10
+}
+.heading{
+    @apply
+    text-3xl
+    uppercase
+    font-bold
+    text-center
+    text-primary-darkest
+    mb-2
+}
+
+.form{
+    @apply
+    grid
+    grid-cols-1
+    w-full
+    sm:w-1/2
+    gap-y-2
+}
+
+.form select,input,textarea{
+    @apply
+    border-2
+    py-2
+    rounded-md
+    capitalize
+    border-primary-darkest
+    hover:border-primary-dark-200
+    text-center
+    text-xl
+}
+.form select option{
+    @apply
+    text-center font-semibold text-gray-700
+}
+.btnContainer{
+    @apply
+    w-full
+    flex
+    justify-center
+    mt-4
+}
+.submit-btn{
+    @apply
+    bg-primary-100
+    w-2/3
+    py-2
+    rounded-md
+    text-2xl
+    font-semibold
+    text-primary-lightest
+}

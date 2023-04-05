@@ -1,0 +1,45 @@
+.container {
+    @apply
+    flex 
+    gap-x-12
+    border-[1px]
+    border-primary-darkest
+    rounded-md
+    p-4
+}
+
+.orderInfoContainer h2,.productInfoContainer h2 {
+    @apply text-2xl
+    font-semibold
+}
+.orderInfoContainer p,.productInfoContainer p {
+    @apply text-lg
+    font-medium
+    text-primary-dark-700
+}
+
+.selectContainer{
+    @apply
+    h-full flex flex-col justify-between
+    text-primary-lightest
+}
+.selectContainer select {
+    @apply
+    bg-primary-darkest
+    py-4
+    border-x-[32px]
+    border-primary-darkest
+    rounded-md
+    cursor-pointer
+}
+
+.selectContainer option {
+    @apply
+    text-center
+}
+.selectContainer button {
+    @apply
+    bg-primary-darkest
+    py-4
+    rounded-md
+}

@@ -1,0 +1,114 @@
+.container {
+  @apply lg:py-10 px-5 
+  bg-primary-lightest
+  lg:grid lg:grid-cols-2 lg:gap-x-5;
+}
+.form-header {
+  @apply flex items-center
+  flex-col
+  gap-y-2
+  2xl:flex-row
+  2xl:justify-between;
+}
+.text-header {
+  @apply uppercase
+    text-3xl
+    font-bold
+    text-primary-darkest;
+}
+.use-profile-info-btn {
+  @apply px-4
+    py-2
+    bg-primary-darkest
+    text-primary-lightest
+    text-lg
+    font-medium
+    rounded-md;
+}
+.break-line {
+  @apply w-full
+    bg-primary-dark-800
+    h-[1px]
+    my-4;
+}
+.form-body {
+  @apply grid
+    grid-cols-2
+    gap-y-4
+    gap-x-4;
+}
+.form-body input {
+  @apply border-[2px]
+    border-primary-dark-100
+    py-2
+    rounded-md;
+}
+.order-summary {
+  @apply bg-primary-darkest
+    rounded-md
+    px-10
+    mt-10
+    lg:mt-0
+    ;
+}
+.order-summary-header {
+  @apply uppercase
+    text-3xl
+    font-semibold
+    text-center
+    text-primary-lightest
+    py-4
+    border-b-[2px]
+    mb-6;
+}
+.order-summary-product-container {
+  @apply flex justify-between 
+    text-primary-lightest
+    text-xl
+    border-b-[1px];
+}
+.order-summary-total-price {
+  @apply flex
+    justify-between
+    text-2xl
+    text-primary-lightest
+    py-4;
+}
+.submit-button {
+  @apply 
+    mt-10
+    py-2
+    ml-[50%]
+    translate-x-[-50%]
+    w-[50%]
+    rounded-lg
+    bg-primary-dark-100 
+    text-white 
+    font-bold
+    text-2xl;
+}
+.card{
+    @apply
+    flex
+    flex-col
+    items-center
+    border-2
+    border-primary-dark-100
+    mt-10
+    rounded-md
+    py-10
+    xl:flex-row
+    xl:justify-around
+    mb-10
+    xl:mb-0
+    max-w-[750px]
+    xl:mx-auto
+}
+.card-text{
+    @apply
+    mt-5
+    text-lg
+    text-center
+    italic
+
+}

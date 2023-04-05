@@ -1,0 +1,59 @@
+.container{
+    @apply
+    min-h-[640px]
+    flex
+    justify-center
+    items-center
+    bg-primary-lightest
+}
+.form{
+    @apply
+    w-[500px]
+}
+.heading{
+    @apply
+    text-4xl
+    uppercase
+    font-bold
+    text-center
+    text-primary-darkest
+    mb-2
+}
+.inputsContainer{
+    @apply
+    flex
+    flex-col
+    gap-y-2
+}
+.inputsContainer input {
+    @apply
+    border-2
+    py-2
+    rounded-md
+    border-primary-darkest
+    hover:border-primary-dark-200
+}
+.signInContainer{
+    @apply
+    flex 
+    justify-between
+    py-2
+    text-2xl
+    font-semibold
+}
+.btnContainer{
+    @apply
+    flex
+    justify-center
+    mt-2
+}
+.submitBtn{
+    @apply
+    bg-primary-100
+    py-2
+    rounded-md
+    text-2xl
+    font-semibold
+    w-2/3
+    text-primary-lightest
+}
