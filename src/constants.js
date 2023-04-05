@@ -1,1 +1,1 @@
-export const url = 'https://e-shop-api-5znb.onrender.com/';
+export const url = 'https://e-shop-api-5znb.onrender.com';
